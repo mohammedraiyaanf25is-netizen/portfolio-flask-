@@ -1,0 +1,11 @@
+body{font-family:Arial,Helvetica,sans-serif;margin:0;color:#111;background:#f8f9fb}
+.container{max-width:1000px;margin:0 auto;padding:20px}
+.site-header{background:#fff;border-bottom:1px solid #eee;padding:10px 0}
+.site-header .container{display:flex;justify-content:space-between;align-items:center}
+nav a{margin-left:12px;text-decoration:none;color:#333}
+.hero-left{padding:20px}
+.profile{width:160px;border-radius:8px}
+.btn{background:#0070f3;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;margin-right:6px}
+.btn-outline{border:1px solid #0070f3;color:#0070f3;padding:7px 10px;border-radius:6px;text-decoration:none}
+.flash.success{background:#d4f7dc;padding:8px;border-radius:6px;margin-bottom:12px}
+.flash.error{background:#f8d7da;padding:8px;border-radius:6px;margin-bottom:12px}
