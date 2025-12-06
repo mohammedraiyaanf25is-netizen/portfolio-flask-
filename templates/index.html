@@ -1,22 +1,29 @@
 {% extends "layout.html" %}
 {% block content %}
-<section id="hero">
-  <div class="hero-left">
-    <h2>Hi, I'm <span class="accent">Your Name</span></h2>
-    <p>ISE student • 2D games • Web & Python • Open to internships</p>
-    <a class="btn" href="{{ url_for('projects') }}">See Projects</a>
-    <a class="btn-outline" href="{{ url_for('resume') }}" target="_blank">Download Resume</a>
-  </div>
-  <div class="hero-right">
-    <img src="{{ url_for('static', filename='assets/profile.png') }}" alt="profile" class="profile">
-  </div>
-</section>
+<<section class="hero">
+    <div class="hero-left">
+        <h1 class="hero-title">
+            Hi, I'm <span class="accent">Mohammad Raiyaan F</span>
+        </h1>
 
+        <p class="hero-subtitle">Student • guided by GPT to Internships</p>
+
+        <a class="btn outline" href="{{ url_for('projects') }}">See Projects</a>
+        <a class="btn" href="{{ url_for('static', filename='docs/resume.pdf') }}" target="_blank">
+            Download Resume
+        </a>
+    </div>
+
+    <div class="hero-right">
+        <img src="{{ url_for('static', filename='assets/profile.png') }}"
+             alt="profile"
+             class="profile-img">
+    </div>
 </section>
 
 <!-- Audio Player Section -->
 <audio controls controlsList="nodownload noplaybackrate">
-    <source src="{{ url_for('static', filename='audio/instructions_offline.mp3') }}" type="audio/mpeg">
+    <source src="{{ url_for('static', filename='audio/instructions_offline.mp3') }}" type="audio/mp3">
     Your browser does not support the audio element.
 </audio>
 
